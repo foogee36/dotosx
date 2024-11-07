@@ -1,0 +1,27 @@
+# Set the XDG config home directory
+# This follows the XDG Base Directory Specification
+# Many applications will use ~/.config for storing configuration files
+export XDG_CONFIG_HOME="$HOME/.config"
+
+# Set the XDG cache home directory
+# Many applications will use ~/.cache for storing cache files
+export XDG_CACHE_HOME="$HOME/.cache"
+
+# Set the XDG data home directory
+# Many applications will use ~/.local/share for storing data files
+export XDG_DATA_HOME="$HOME/.local/share"
+
+# Set the XDG state home directory
+# Many applications will use ~/.local/state for storing state files
+export XDG_STATE_HOME="$HOME/.local/state"
+
+# Add the local bin directory to the PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+# Set the zsh configuration directory
+# This tells zsh to look for its config files in $HOME/.config/zsh
+# e.g. $ZDOTDIR/.zshrc, $ZDOTDIR/.zprofile will be sourced
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+
+# Docker
+export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"

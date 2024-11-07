@@ -1,0 +1,18 @@
+# List-related aliases
+alias ls='ls -G'
+alias ll='ls -alG'
+
+# Colorize grep output
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# Add safty nets
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# NeoVim
+alias vi="nvim"
+alias vim="nvim"
+alias view="nvim -R"

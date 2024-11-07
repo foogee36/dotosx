@@ -1,0 +1,9 @@
+[user]
+    name = foogee36
+    email = 21500576-foogee36@users.noreply.gitlab.com
+
+[alias]
+    s = status
+    l = log
+    cm = commit -m
+    a = add

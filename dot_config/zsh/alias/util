@@ -1,0 +1,2 @@
+# List aliases
+alias gal='alias | grep git'

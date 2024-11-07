@@ -1,0 +1,7 @@
+# starship prompt
+eval "$(starship init zsh)"
+
+# aliases
+[ -f $ZDOTDIR/alias/core ] && source $ZDOTDIR/alias/core
+[ -f $ZDOTDIR/alias/git ] && source $ZDOTDIR/alias/git
+[ -f $ZDOTDIR/alias/util ] && source $ZDOTDIR/alias/util
