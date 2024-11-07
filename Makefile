@@ -13,6 +13,10 @@ brew: ## Install dependencies with brew
 	@brew tap homebrew/bundle
 	@brew bundle --file ./Brewfile
 
+.PHONY: doctor
+doctor: ## Run the doctor script
+	@./scripts/doctor.sh
+
 .PHONY: dumpb
 dumpb: ## Dump the brew dependencies
 	@brew bundle dump --force --file ./Brewfile

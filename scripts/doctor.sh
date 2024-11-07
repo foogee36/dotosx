@@ -5,14 +5,14 @@
 
 # Function to display text in bold
 bold_text() {
-    echo "\033[1m$1\033[0m"
+    echo -e "\033[1m$1\033[0m"
 }
 
 # Function to display text in a specified color
 color_text() {
     local color_code=$1
     shift
-    echo "\033[${color_code}m$@\033[0m"
+    echo -e "\033[${color_code}m$@\033[0m"
 }
 
 # Function to display text in green
@@ -24,9 +24,9 @@ green_text() {
 check_command() {
     if command -v $1 &> /dev/null
     then
-        echo "$(bold_text $1) at $(green_text $(command -v $1))"
+        echo -e "$(bold_text $1) at $(green_text $(command -v $1))"
     else
-        echo "$(bold_text $1) could not be found"
+        echo -e "$(bold_text $1) could not be found"
     fi
 }
 
@@ -42,7 +42,7 @@ commands=(
     "kubectl"
     "gcloud"
     "gh"
-    "gnupg"
+    "gpg"
     "bat"
 )
 
@@ -54,7 +54,7 @@ done
 
 # Check if the UDEV Gothic font is installed
 if [ -f "/Library/Fonts/UDEVGothicNF-Regular.ttf" ]; then
-    echo $(bold_text "UDEV Gothic")" font is installed"
+    echo -e $(bold_text "UDEV Gothic")" font is installed"
 else
-    echo $(bold_text "UDEV Gothic")" font is not installed"
+    echo -e $(bold_text "UDEV Gothic")" font is not installed"
 fi
