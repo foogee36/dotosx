@@ -4,6 +4,9 @@ set -eu
 
 BIN_DIR=${HOME}/.local/bin
 
+# Install Zap
+zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1 --keep
+
 # Check if the `chezmoi` command is available
 if ! chezmoi="$(command -v chezmoi)"; then
   echo "Installing chezmoi..."
