@@ -20,3 +20,6 @@ make setup
 - [Krew](https://krew.sigs.k8s.io/docs/user-guide/setup/install/)
 - [kubectx & kubens](https://github.com/ahmetb/kubectx?tab=readme-ov-file#installation)
 
+## Daily operations
+
+https://www.chezmoi.io/user-guide/daily-operations/
